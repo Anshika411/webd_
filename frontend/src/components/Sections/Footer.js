@@ -223,14 +223,14 @@ export default function Footer() {
             }}
           >
             <IconButton
-              href="https://github.com/your-github"
+              href="https://github.com/Anshika411"
               target="_blank"
               rel="noopener"
             >
               <GitHubIcon />
             </IconButton>
             <IconButton
-              href="https://linkedin.com/your-linkedin"
+              href="https://linkedin.com/https://www.linkedin.com/in/anshika-anshika-330b74323/"
               target="_blank"
               rel="noopener"
             >
