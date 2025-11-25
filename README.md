@@ -94,8 +94,7 @@ MIT
 ---
 
 ## Contributors
-- [Kumar Prateek](https://github.com/prateek2105)
-- [Aaryan Kuntal](https://github.com/schroder0)
+- [Anshika](https://github.com/Anshika411)
 
 ---
 
