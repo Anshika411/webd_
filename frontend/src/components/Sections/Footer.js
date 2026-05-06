@@ -230,7 +230,7 @@ export default function Footer() {
               <GitHubIcon />
             </IconButton>
             <IconButton
-              href="https://linkedin.com/https://www.linkedin.com/in/anshika-anshika-330b74323/"
+              href="https://www.linkedin.com/in/anshika-anshika-330b74323/"
               target="_blank"
               rel="noopener"
             >
