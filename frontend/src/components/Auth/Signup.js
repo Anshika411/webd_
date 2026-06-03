@@ -42,21 +42,42 @@ const Signup = () => {
     setError('')
     setLoading(true)
 
-    try {
-      const response = await signup(formData)
-      console.log('Signup successful:', response.data)
-      navigate('/login')
-    } catch (error) {
-      console.error('Signup failed:', error)
-      setError(
-        error.response?.data?.message ||
-        error.response?.data?.error ||
-        'Failed to create account. Please try again.'
-      )
-    } finally {
-      setLoading(false)
-    }
-  }
+  //   try {
+  //     const response = await signup(formData)
+  //     console.log('Signup successful:', response.data)
+  //     navigate('/login')
+  //   } catch (error) {
+  //     console.error('Signup failed:', error)
+  //     setError(
+  //       error.response?.data?.message ||
+  //       error.response?.data?.error ||
+  //       'Failed to create account. Please try again.'
+  //     )
+  //   } finally {
+  //     setLoading(false)
+  //   }
+  // }
+  try {
+  const response = await signup(formData)
+
+  console.log('FULL RESPONSE:', response)
+  console.log('RESPONSE DATA:', response?.data)
+
+  alert('SUCCESS')
+
+  navigate('/login')
+} catch (error) {
+  console.log('FULL ERROR:', error)
+  console.log('ERROR RESPONSE:', error?.response)
+
+  alert(error?.message)
+
+  setError(
+    error.response?.data?.message ||
+    error.response?.data?.error ||
+    'Failed to create account. Please try again.'
+  )
+}
 
   return (
     <Container maxWidth="sm">
