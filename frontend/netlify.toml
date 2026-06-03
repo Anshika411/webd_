@@ -3,7 +3,7 @@
   command = "npm run build"
 
 [build.environment]
-  REACT_APP_API_URL = "https://careconnect-backend-mw1u.onrender.com/api"
+  REACT_APP_API_URL = "https://careconnect-backend-s3i7.onrender.com/api"
   REACT_APP_ENV = "production"
   CI = "false"
 
@@ -13,11 +13,11 @@
   status = 200
 
 [context.production.environment]
-  REACT_APP_API_URL = "https://careconnect-backend-mw1u.onrender.com/api"
+  REACT_APP_API_URL = "https://careconnect-backend-s3i7.onrender.com/api"
   REACT_APP_ENV = "production"
   CI = "false"
 
 [context.deploy-preview.environment]
-  REACT_APP_API_URL = "https://careconnect-backend-mw1u.onrender.com/api"
+  REACT_APP_API_URL = "https://careconnect-backend-s3i7.onrender.com/api"
   REACT_APP_ENV = "staging"
   CI = "false"
