@@ -78,6 +78,10 @@ const Signup = () => {
     'Failed to create account. Please try again.'
   )
 }
+finally {
+  setLoading(false)
+}
+}
 
   return (
     <Container maxWidth="sm">
