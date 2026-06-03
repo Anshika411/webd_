@@ -23,24 +23,30 @@ const feedbackRoutes = require('./routes/feedbackRoutes')
 const app = express()
 
 // Middleware
-const allowedOrigins = process.env.ALLOWED_ORIGINS
-  ? process.env.ALLOWED_ORIGINS.split(',')
-  : [process.env.FRONTEND_URL]
+// const allowedOrigins = process.env.ALLOWED_ORIGINS
+//   ? process.env.ALLOWED_ORIGINS.split(',')
+//   : [process.env.FRONTEND_URL]
 
+// app.use(
+//   cors({
+//     origin: (origin, callback) => {
+//       // Allow requests with no origin (like mobile apps, curl requests)
+//       if (!origin) return callback(null, true)
+      
+//       if (allowedOrigins.includes(origin)) {
+//         return callback(null, true)
+//       } else {
+//         return callback(new Error('Not allowed by CORS'))
+//       }
+//     },
+//     credentials: true, // Allow cookies to be sent with requests
+//   }),
+// )
 app.use(
   cors({
-    origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile apps, curl requests)
-      if (!origin) return callback(null, true)
-      
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true)
-      } else {
-        return callback(new Error('Not allowed by CORS'))
-      }
-    },
-    credentials: true, // Allow cookies to be sent with requests
-  }),
+    origin: true,
+    credentials: true,
+  })
 )
 
 app.use(express.json())
